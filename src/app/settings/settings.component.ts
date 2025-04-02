@@ -29,10 +29,8 @@ export class SettingsComponent implements OnInit {
   ngOnInit(): void {
 
     if (localStorage.getItem('theme') === 'dark') {
-      alert('Dark mode is enabled');
       this.theme = PoSwitchLabelPosition.Left;
     } else {
-      alert('Dark mode is disabled');
       this.theme = PoSwitchLabelPosition.Right;
     }
 

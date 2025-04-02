@@ -40,7 +40,7 @@ export class ExampleTableComponent {
     setTimeout(() => {
       this.poNotification.success('Table data loaded successfully!');
       this.loading = false;
-    }, 2000);
+    }, 1000);
 
   }
 

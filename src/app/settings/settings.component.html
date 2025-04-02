@@ -1,0 +1,30 @@
+<po-page-default [p-title]="title" [p-subtitle]="description" [p-actions]="actionsSettings">
+
+    <po-container>
+        <div class="po-row">
+            <po-input class="po-md-4" name="name" p-label="Name"> </po-input>
+
+            <po-input class="po-md-8" name="lastName" p-label="Last Name"> </po-input>
+        </div>
+        <div class="po-row">
+            <po-input class="po-md-6" name="email" p-label="E-mail"> </po-input>
+            <po-input class="po-md-6" name="phoneNumber" p-label="Phone Number"> </po-input>
+        </div>
+    </po-container>
+    <br>
+    <po-container>
+        <div class="po-row">
+            <po-switch class="po-md-6" [(ngModel)]="theme" p-label="Selection Theme" p-label-off="Light Mode" p-label-on="Dark Mode."
+                (p-change)="toggleDarkMode()">
+            </po-switch>
+        </div>
+
+        <div class="po-row">
+            <po-select class="po-md-6" [ngModel]="language" (ngModelChange)="language = $event" p-label="Language" [p-options]="languageOptions" 
+                (p-change)="onLanguageChange()">
+            </po-select>
+        </div>
+    </po-container>
+
+
+</po-page-default>

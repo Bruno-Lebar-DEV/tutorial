@@ -1,1 +1,39 @@
-<p>faq works!</p>
+<po-page-default [p-title]="title" [p-subtitle]="description">
+    <p class="po-pb-2 po-text-color-neutral-dark-40">Learn more about PO UI, a powerful UI library for Angular applications!</p>
+
+    <po-accordion [p-show-manager-accordion]="true">
+        <po-accordion-item p-label="What is PO UI?" p-label-tag="Important!" [p-type-tag]="warningTag">
+            <p class="po-text-color-neutral-dark-40">
+                PO UI is a set of UI components and tools designed to build modern and responsive web applications using Angular.
+            </p>
+        </po-accordion-item>
+
+        <po-accordion-item p-label="What is the official website for PO UI?" p-label-tag="Important!" [p-type-tag]="successTag">
+            <p class="po-text-color-neutral-dark-40">
+                The official website for PO UI is <a href="https://po-ui.io" target="_blank">https://po-ui.io</a>.
+            </p>
+        </po-accordion-item>
+
+        <po-accordion-item p-label="Where can I find the documentation?" p-label-tag="Important!" [p-type-tag]="dangerTag">
+            <p class="po-text-color-neutral-dark-40">
+                The documentation for PO UI is available at <a href="https://po-ui.io/documentation" target="_blank">https://po-ui.io/documentation</a>.
+            </p>
+        </po-accordion-item>
+
+        <po-accordion-item p-label="Is PO UI free to use?" p-label-tag="Important!" [p-type-tag]="infoTag">
+            <p class="po-text-color-neutral-dark-40">
+                Yes, PO UI is open-source and free to use under the MIT license.
+            </p>
+        </po-accordion-item>
+
+        <po-accordion-item p-label="What are the main features of PO UI?">
+            <p class="po-text-color-neutral-dark-40">
+                PO UI provides a wide range of components such as forms, tables, charts, and layout tools, all designed to create responsive and accessible web applications.
+            </p>
+        </po-accordion-item>
+    </po-accordion>
+
+    <p class="po-pt-2 po-text-color-neutral-dark-40">
+        For more information, visit the <a href="https://po-ui.io" target="_blank">PO UI website</a>.
+    </p>
+</po-page-default>

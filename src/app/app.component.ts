@@ -35,7 +35,7 @@ export class AppComponent {
     { label: 'Home', link: '/home', shortLabel: 'home', icon: 'po-icon-home' },
     {
       label: 'Examples', shortLabel: 'examples', icon: 'po-icon-list', subItems: [
-        { label: 'page', link: '/examples/example-page', shortLabel: 'example-page' },
+        { label: 'Page Component', link: '/examples/example-page', shortLabel: 'example-page' },
         { label: 'Table Component', link: '/examples/example-table', shortLabel: 'example-table' },
       ]
     },

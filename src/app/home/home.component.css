@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 80vh; /* Ocupa toda a altura da tela */
+  justify-content: space-around; /* Centraliza os itens verticalmente */
+  height: 80vh; /* Ocupa quase toda a altura da tela */
   width: 100%; /* Ocupa toda a largura da tela */
   margin: 0; /* Remove margens */
   text-align: center;
   box-sizing: border-box; /* Inclui padding e border no tamanho total */
   border: 1px solid #003366; /* Borda azul escura */
+  border-radius: 8px; /* Cantos arredondados */
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Fundo com gradiente suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .po-title {
@@ -17,25 +20,34 @@
   color: white;
   padding: 20px;
   width: 100%; /* Ajusta para ocupar toda a largura */
-  font-size: 2rem; /* Ajusta o tamanho da fonte para responsividade */
+  font-size: 2.5rem; /* Tamanho maior para destaque */
   font-weight: bold;
   text-align: center; /* Centraliza o texto */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 1.5px; /* Espaçamento entre letras */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
 
 .po-subtitle {
-  font-size: 1.5rem; /* Ajusta o tamanho da fonte para responsividade */
-  margin-top: 10px;
+  font-size: 1.8rem; /* Tamanho maior para modernidade */
+  margin-top: 15px;
+  color: #003366; /* Azul escuro para contraste */
+  font-weight: 600; /* Peso intermediário */
 }
 
 .po-description {
   max-width: 800px;
   font-size: 1.2rem; /* Ajusta o tamanho da fonte para responsividade */
+  line-height: 1.6; /* Melhora a legibilidade */
+  color: #4a4a4a; /* Cinza escuro para texto */
+  margin-bottom: 20px; /* Espaçamento entre parágrafos */
 }
 
 .po-update {
-  font-size: 1.2rem; /* Ajusta o tamanho da fonte para responsividade */
+  font-size: 1rem; /* Tamanho menor para informações secundárias */
   font-weight: bold;
   margin-top: 12px;
+  color: #555; /* Cinza médio */
 }
 
 .po-footer {
@@ -44,7 +56,9 @@
   font-size: 1rem; /* Ajusta o tamanho da fonte para responsividade */
   background-color: #003366;
   color: white;
-  padding: 10px;
+  padding: 15px;
   width: 100%; /* Ajusta para ocupar toda a largura */
   text-align: center; /* Centraliza o texto */
+  border-top: 2px solid #002244; /* Destaque na borda superior */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve no topo */
 }
